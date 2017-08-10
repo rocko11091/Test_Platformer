@@ -31,6 +31,12 @@
 //https://www.youtube.com/watch?v=HVCKH5majs0
 // - if you are in 'z' room, at x,y location 
 
+/*
+https://www.youtube.com/watch?v=JZQ_Q2LtT5E
+Persistence
+
+*/
+/*
 if (room = rm_tutorial)
 {
     room_goto(rm_1);
@@ -38,18 +44,32 @@ if (room = rm_tutorial)
 
 if (room = rm_1)
 {
+    if (instance_position(992,obj_player.y,obj_player))
+    {
+        room_goto(rm_2);
+    }
+    /*
+    - for portalling to specific point in different rooms
+    
     if (instance_position(992,384,obj_player))
     {
         room_goto(rm_2);
         room_instance_add(rm_2,32,352,obj_player);
-    }
-    //if (instance_position(992,384,obj_player))
-    //{
-      //  room_goto(rm_2);
-        //room_instance_add(rm_2,32,352,obj_player);
-    //}
-    
+    }*/
+
+/*
 }
+
+if (room = rm_2)
+{
+    if (instance_position(32,obj_player.y,obj_player))
+    {
+        room_goto(rm_1);   
+    }
+
+}
+
+*/
 </string>
           </argument>
         </arguments>
