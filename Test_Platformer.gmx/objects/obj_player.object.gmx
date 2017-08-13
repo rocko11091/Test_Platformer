@@ -166,8 +166,8 @@ Persistence
 if (room = rm_tutorial)
 {
     room_goto(rm_1);
-    x = 32
-    y = 704
+    x = 32;
+    y = 704;
     room_instance_add(rm_1,x,y,obj_player);
 }
 
@@ -176,8 +176,8 @@ if (room = rm_1)
     if (instance_position(992,obj_player.y,obj_player))
     {
         room_goto(rm_2);
-        x = 32
-        y = obj_player.y
+        x = 32;
+        y = obj_player.y;
         room_instance_add(rm_2,x,y,obj_player);
     }
     /*
@@ -194,11 +194,11 @@ if (room = rm_1)
 
 if (room = rm_2)
 {
-    if (instance_position(32,obj_player.y,obj_player))
+    if (instance_position(0,obj_player.y,obj_player))
     {
         room_goto(rm_1);   
-        x = 992
-        y = obj_player.y
+        x = 992;
+        y = obj_player.y;
         room_instance_add(rm_1,x,y,obj_player);     
         
     }

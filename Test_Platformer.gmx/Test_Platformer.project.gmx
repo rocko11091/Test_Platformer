@@ -22,13 +22,17 @@
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
-    <object>objects\obj_wall</object>
-    <object>objects\obj_powerup</object>
-    <object>objects\obj_enemy</object>
-    <object>objects\obj_enemy_nofall</object>
-    <object>objects\obj_checkpoint</object>
-    <object>objects\obj_portal</object>
-    <object>objects\obj_platform</object>
+    <objects name="Enemy">
+      <object>objects\obj_enemy_nofall</object>
+      <object>objects\obj_enemy</object>
+    </objects>
+    <objects name="Environment">
+      <object>objects\obj_wall</object>
+      <object>objects\obj_checkpoint</object>
+      <object>objects\obj_powerup</object>
+      <object>objects\obj_portal</object>
+      <object>objects\obj_platform</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_initialize</room>
